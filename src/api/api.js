@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://job-application-tracker-api-lckq.onrender.com";
 
 export async function getApplications() {
   const response = await axios.get(`${API_URL}/applications`);
