@@ -1,0 +1,53 @@
+.applications-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.applications-controls input,
+.applications-controls select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.applications-controls input {
+  flex: 1;
+}
+
+.applications-list {
+  display: grid;
+  gap: 15px;
+}
+
+.application-card {
+  padding: 20px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.application-card h3 {
+  margin-top: 0;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-buttons .delete-btn {
+  background-color: #dc2626;
+}

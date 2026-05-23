@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .app {
+    padding: 12px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .nav-buttons button {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .applications-controls {
+    flex-direction: column;
+  }
+}
