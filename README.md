@@ -1,16 +1,95 @@
-# React + Vite
+# Job Application Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for tracking internship and job applications.
 
-Currently, two official plugins are available:
+Users can create, edit, delete, search, and filter job applications. The app also includes a dashboard with application status statistics and a pie chart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+Frontend:  
+https://job-application-tracker-ms.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Backend API:  
+https://job-application-tracker-api-lckq.onrender.com
 
-## Expanding the ESLint configuration
+GitHub Repository:  
+https://github.com/Mohammed-Shoeb07/job-application-tracker
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> The deployed application includes sample data for demonstration purposes.
+
+## Features
+
+- Add new job applications
+- Edit existing applications
+- Delete applications
+- Search and filter applications
+- Dashboard with application statistics
+- Pie chart visualization of application statuses
+- Persistent PostgreSQL database storage
+- Responsive user interface
+- Full-stack cloud deployment
+
+## Tech Stack
+
+### Frontend
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend
+
+- FastAPI
+- PostgreSQL
+- psycopg2
+
+### Deployment
+
+- Netlify
+- Render
+- Supabase
+
+## Local Setup
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+
+python -m venv venv
+
+.\venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
+
+## Environment Variables
+
+Create a `.env` file inside the `backend` folder and add:
+
+```env
+DB_HOST=your_supabase_host
+DB_NAME=postgres
+DB_USER=your_supabase_user
+DB_PASSWORD=your_supabase_password
+DB_PORT=6543
+```
+
+## Future Improvements
+
+- User authentication and authorization
+- Pagination for large datasets
+- Advanced filtering and sorting
+- Application deadline reminders
+- Resume and cover letter uploads
